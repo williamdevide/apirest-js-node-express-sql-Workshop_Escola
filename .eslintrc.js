@@ -24,5 +24,10 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'class-methods-use-this': 'off',
+    'import/first': 'off',
+    'no-param-reassign': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    // eslint-disable-next-line quote-props
+    'camelcase': 'off',
   },
 };
