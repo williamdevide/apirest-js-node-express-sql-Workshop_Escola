@@ -28,10 +28,10 @@ class App {
 
   routes() {
     this.app.use('/', homeRoutes);
-    this.app.use('/users/', userRoutes);
-    this.app.use('/tokens/', tokenRoutes);
-    this.app.use('/alunos/', alunoRoutes);
-    this.app.use('/fotos/', fotoRoutes);
+    this.app.use('/escola/users/', userRoutes);
+    this.app.use('/escola/tokens/', tokenRoutes);
+    this.app.use('/escola/alunos/', alunoRoutes);
+    this.app.use('/escola/fotos/', fotoRoutes);
   }
 }
 
