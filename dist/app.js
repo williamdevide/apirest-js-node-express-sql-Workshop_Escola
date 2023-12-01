@@ -19,16 +19,17 @@ const whiteList = [
   'http://wdkdev.ddns.net',
   'http://35.198.53.165',
   'http://localhost:3002',
+  'http://localhost:3000',
 ];
 
 const corsOptions = {
-  origin: function (origin, callback) {
-    if(whiteList.indexOf(origin) !== -1 || !origin) {
+  origin(origin, callback) {
+    if (whiteList.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
     }
-  }
+  },
 };
 class App {
   constructor() {
