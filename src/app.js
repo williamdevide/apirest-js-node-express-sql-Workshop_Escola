@@ -18,8 +18,7 @@ import fotoRoutes from './routes/fotoRoutes';
 const whiteList = [
   'http://wdkdev.ddns.net',
   'http://35.198.53.165',
-  'http://localhost:3002',
-  'http://localhost:3000',
+  'http://35.198.53.165/escola-front',
 ];
 
 const corsOptions = {
