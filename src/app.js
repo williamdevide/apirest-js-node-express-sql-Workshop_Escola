@@ -18,7 +18,6 @@ import fotoRoutes from './routes/fotoRoutes';
 const whiteList = [
   'http://wdkdev.ddns.net',
   'http://35.198.53.165',
-  'http://35.198.53.165/escola-front',
 ];
 
 const corsOptions = {
@@ -39,7 +38,7 @@ class App {
 
   middlewares() {
     this.app.use(cors(corsOptions));
-    this.app.use(helmet.crossOriginResourcePolicy({ policy: 'cross-origin' }));
+    this.app.use(helmet());
 
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
